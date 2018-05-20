@@ -28,5 +28,17 @@
     },
     "reversestr": {
         "description": "Reverse String"
+    },
+    "pbasic": {
+        "description": "Basic file for problem"
+    },
+    "pbinarytree": {
+        "description": "Binary Tree solution file stub"
+    },
+    "p1darr": {
+        "description": "One Dimen Array Basic file stub"
+    },
+    "p2darr": {
+        "description": "One Dimen Array Basic file stub"
     }
 }
