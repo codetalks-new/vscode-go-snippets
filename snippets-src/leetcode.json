@@ -1,0 +1,32 @@
+{
+    "absi": {
+        "description": "abs for int"
+    },
+    "maxi": {
+        "description": "max for int"
+    },
+    "maxints": {
+        "description": "max for ints"
+    },
+    "limits": {
+        "description": "MaxInt and MinInt"
+    },
+    "treenode": {
+        "description": "type TreeNode struct"
+    },
+    "dumptree": {
+        "description": "Dump Tree using level order"
+    },
+    "listnode": {
+        "description": "type ListNode struct"
+    },
+    "dumplistnode": {
+        "description": "Dump ListNode using level order"
+    },
+    "reversearr": {
+        "description": "Reverse Ints Array"
+    },
+    "reversestr": {
+        "description": "Reverse String"
+    }
+}

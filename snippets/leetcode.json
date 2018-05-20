@@ -1,0 +1,156 @@
+{
+  "absi": {
+    "description": "abs for int",
+    "prefix": "absi",
+    "body": [
+      "func abs(num int) int {",
+      "\tif num < 0 {",
+      "\t\treturn -num",
+      "\t}",
+      "\treturn num",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "maxi": {
+    "description": "max for int",
+    "prefix": "maxi",
+    "body": [
+      "func max(a, b int) int {",
+      "\tif a > b {",
+      "\t\treturn a",
+      "\t}",
+      "\treturn b",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "maxints": {
+    "description": "max for ints",
+    "prefix": "maxints",
+    "body": [
+      "func max(nums ...int) int {",
+      "\tmaxNum := -int(^uint(0)>>1) - 1",
+      "\tfor _, num := range nums {",
+      "\t\tif num > maxNum {",
+      "\t\t\tmaxNum = num",
+      "\t\t}",
+      "\t}",
+      "\treturn maxNum",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "limits": {
+    "description": "MaxInt and MinInt",
+    "prefix": "limits",
+    "body": [
+      "const (",
+      "\tMaxInt = int(^uint(0) >> 1)",
+      "\tMinInt = -MaxInt - 1",
+      ")"
+    ],
+    "scope": "go"
+  },
+  "treenode": {
+    "description": "type TreeNode struct",
+    "prefix": "treenode",
+    "body": [
+      "type TreeNode struct {",
+      "\tVal   int",
+      "\tLeft  *TreeNode",
+      "\tRight *TreeNode",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "dumptree": {
+    "description": "Dump Tree using level order",
+    "prefix": "dumptree",
+    "body": [
+      "import \"fmt\"",
+      "func dumpTree(root *TreeNode) {",
+      "\tif root == nil {",
+      "\t\tfmt.Println(\"nil\")",
+      "\t\treturn",
+      "\t}",
+      "\tbranches := []*TreeNode{root}",
+      "\tfmt.Print(\"[\")",
+      "\tfor len(branches) > 0 {",
+      "\t\tbranch := branches[0]",
+      "\t\tbranches = branches[1:]",
+      "\t\tif branch.Left != nil {",
+      "\t\t\tbranches = append(branches, branch.Left)",
+      "\t\t}",
+      "\t\tif branch.Right != nil {",
+      "\t\t\tbranches = append(branches, branch.Right)",
+      "\t\t}",
+      "\t\tif len(branches) > 0 {",
+      "\t\t\tfmt.Print(branch.Val, \",\")",
+      "\t\t} else {",
+      "\t\t\tfmt.Print(branch.Val, \"\")",
+      "\t\t}",
+      "\t}",
+      "\tfmt.Println(\"]\")",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "listnode": {
+    "description": "type ListNode struct",
+    "prefix": "listnode",
+    "body": [
+      "type ListNode struct {",
+      "\tVal  int",
+      "\tNext *ListNode",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "dumplistnode": {
+    "description": "Dump ListNode using level order",
+    "prefix": "dumplistnode",
+    "body": [
+      "import \"fmt\"",
+      "func dumpListNode(lnode *ListNode) {",
+      "\tfmt.Print(\"ListNode[\")",
+      "\tfor lnode != nil {",
+      "\t\tfmt.Print(lnode.Val, \",\")",
+      "\t\tlnode = lnode.Next",
+      "\t}",
+      "\tfmt.Print(\"]\\n\")",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "reversearr": {
+    "description": "Reverse Ints Array",
+    "prefix": "reversearr",
+    "body": [
+      "func reverseArray(nums []int) {",
+      "\tfor i, j := 0, len(nums)-1; i < j; i, j = i+1, j-1 {",
+      "\t\ttmp := nums[i]",
+      "\t\tnums[i] = nums[j]",
+      "\t\tnums[j] = tmp",
+      "\t}",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "reversestr": {
+    "description": "Reverse String",
+    "prefix": "reversestr",
+    "body": [
+      "func reverseString(s string) string {",
+      "\tbytes := []byte(s)",
+      "\tfor i, j := 0, len(bytes)-1; i < j; i, j = i+1, j-1 {",
+      "\t\ttmp := bytes[i]",
+      "\t\tbytes[i] = bytes[j]",
+      "\t\tbytes[j] = tmp",
+      "\t}",
+      "\treturn string(bytes)",
+      "}"
+    ],
+    "scope": "go"
+  }
+}
