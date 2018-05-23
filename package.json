@@ -2,8 +2,9 @@
     "name": "go-snippets",
     "displayName": "Go Snippets",
     "description": "Some snippets for go,especially usefull for leetcode etc.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "banxi",
+    "icon": "images/logo.png",
     "homepage": "https://github.com/banxi1988/vscode-go-snippets",
     "repository": {
         "type": "git",

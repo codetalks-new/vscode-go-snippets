@@ -25,11 +25,24 @@
     ],
     "scope": "go"
   },
+  "mini": {
+    "description": "min for int",
+    "prefix": "mini",
+    "body": [
+      "func mini(a, b int) int {",
+      "\tif a < b {",
+      "\t\treturn a",
+      "\t}",
+      "\treturn b",
+      "}"
+    ],
+    "scope": "go"
+  },
   "maxints": {
     "description": "max for ints",
     "prefix": "maxints",
     "body": [
-      "func max(nums ...int) int {",
+      "func maxInts(nums ...int) int {",
       "\tmaxNum := -int(^uint(0)>>1) - 1",
       "\tfor _, num := range nums {",
       "\t\tif num > maxNum {",
@@ -37,6 +50,28 @@
       "\t\t}",
       "\t}",
       "\treturn maxNum",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "joinints": {
+    "description": "join ints to string",
+    "prefix": "joinints",
+    "body": [
+      "import (",
+      "\t\"strconv\"",
+      "\t\"strings\"",
+      ")",
+      "func joinNums(arr []int, sep string) string {",
+      "\tnumCount := len(arr)",
+      "\tif numCount == 0 {",
+      "\t\treturn \"\"",
+      "\t}",
+      "\tstrs := make([]string, numCount)",
+      "\tfor i := 0; i < numCount; i++ {",
+      "\t\tstrs[i] = strconv.Itoa(arr[i])",
+      "\t}",
+      "\treturn strings.Join(strs, sep)",
       "}"
     ],
     "scope": "go"

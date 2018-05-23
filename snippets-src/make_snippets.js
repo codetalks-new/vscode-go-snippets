@@ -92,6 +92,20 @@ function makeSnippets(name, folder, global_options) {
   const destFilePath = path.join(__dirname, '..', 'snippets', name)
   console.info("Write snippets to ", destFilePath)
   fs.writeFileSync(destFilePath, JSON.stringify(data, null, 2));
+  outputSnippetsTable(data)
+}
+
+function outputSnippetsTable(data){
+  console.log(`| prefix | description |`)
+  console.log(`| :----- | :------ |`)
+  for (const key in data) {
+    if (!data.hasOwnProperty(key)) {
+      continue;
+    }
+    const snippet = data[key]; 
+    let md = `| ${snippet.prefix} | ${snippet.description} |`
+    console.log(md)
+  }
 }
 
 
