@@ -5,8 +5,14 @@
     "maxi": {
         "description": "max for int"
     },
+    "mini": {
+        "description": "min for int"
+    },
     "maxints": {
         "description": "max for ints"
+    },
+    "joinints": {
+        "description": "join ints to string"
     },
     "limits": {
         "description": "MaxInt and MinInt"
