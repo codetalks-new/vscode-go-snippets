@@ -1,4 +1,6 @@
 # Go Snippets 
+![Logo](https://github.com/banxi1988/vscode-go-snippets/blob/master/images/logo.png?raw=true)
+
 Currently we only offer some snippets for leetcode . below is the snippets table:
 
 | prefix | description |
