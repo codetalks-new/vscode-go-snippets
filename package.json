@@ -2,7 +2,7 @@
     "name": "go-snippets",
     "displayName": "Go Snippets",
     "description": "Some snippets for go,especially usefull for leetcode etc.",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "banxi",
     "icon": "images/logo.png",
     "homepage": "https://github.com/banxi1988/vscode-go-snippets",
@@ -21,6 +21,10 @@
             {
                 "language": "go",
                 "path": "./snippets/leetcode.json"
+            },
+            {
+                "language": "go",
+                "path": "./snippets/go.json"
             }
         ]
     },

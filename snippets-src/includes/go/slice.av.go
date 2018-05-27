@@ -1,1 +1,1 @@
-${arr:1} = append(${arr:1}, ${vec:2}...)
+${1: arr} = append($1, ${vec:2}...)
