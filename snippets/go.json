@@ -1,0 +1,97 @@
+{
+  "range.map": {
+    "description": "range map",
+    "prefix": "range.map",
+    "body": [
+      "for k,v := range $1{",
+      "\t$0",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "range.arr": {
+    "description": "range array, slices",
+    "prefix": "range.arr",
+    "body": [
+      "for i,v := range $1{",
+      "\t$0",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "range.str": {
+    "description": "range interate over unicode points,not bytes",
+    "prefix": "range.str",
+    "body": [
+      "for i,r := range $1{",
+      "\t$0",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "slice.av": {
+    "description": "Slice Append Vector",
+    "prefix": "slice.av",
+    "body": [
+      "${arr:1} = append(${arr:1}, ${vec:2}...)"
+    ],
+    "scope": "go"
+  },
+  "slice.copy": {
+    "description": "Slice Copy",
+    "prefix": "slice.copy",
+    "body": [
+      "b = make([]T, len(a))",
+      "copy(b, a)"
+    ],
+    "scope": "go"
+  },
+  "slice.cut": {
+    "body": "a = append(a[:i], a[j:]...)",
+    "prefix": "slice.cut",
+    "description": "a = append(a[:i], a[j:]...)",
+    "scope": "go"
+  },
+  "slice.delete": {
+    "body": "a = append(a[:i], a[i+1:]...)",
+    "prefix": "slice.delete",
+    "description": "a = append(a[:i], a[i+1:]...)",
+    "scope": "go"
+  },
+  "slice.extend": {
+    "body": "a = append(a, make([]T, j)...)",
+    "prefix": "slice.extend",
+    "description": "a = append(a, make([]T, j)...)",
+    "scope": "go"
+  },
+  "slice.insert": {
+    "body": "a = append(a[:i], append([]T{x}, a[i:]...)...)",
+    "prefix": "slice.insert",
+    "description": "a = append(a[:i], append([]T{x}, a[i:]...)...)",
+    "scope": "go"
+  },
+  "slice.unshift": {
+    "body": "a = append([]T{x}, a...)",
+    "prefix": "slice.unshift",
+    "description": "a = append([]T{x}, a...)",
+    "scope": "go"
+  },
+  "slice.push": {
+    "body": "a = append(a, x)",
+    "prefix": "slice.push",
+    "description": "a = append(a, x)",
+    "scope": "go"
+  },
+  "slice.pop": {
+    "body": "x, a = a[0], a[1:]",
+    "prefix": "slice.pop",
+    "description": "x, a = a[0], a[1:]",
+    "scope": "go"
+  },
+  "slice.popback": {
+    "body": "x, a = a[len(a) -1], a[:len(a) -1]",
+    "prefix": "slice.popback",
+    "description": "x, a = a[len(a) -1], a[:len(a) -1]",
+    "scope": "go"
+  }
+}

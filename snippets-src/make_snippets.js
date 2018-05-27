@@ -110,3 +110,4 @@ function outputSnippetsTable(data){
 
 
 makeSnippets('leetcode.json', 'leetcode', { scope: "go" });
+makeSnippets('go.json', 'go', { scope: "go" });

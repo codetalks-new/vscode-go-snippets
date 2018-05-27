@@ -1,0 +1,41 @@
+{
+    "range.map":{
+        "description": "range map"
+    },
+    "range.arr":{
+        "description": "range array, slices"
+    },
+    "range.str":{
+        "description": "range interate over unicode points,not bytes"
+    },
+    "slice.av":{
+        "description": "Slice Append Vector"
+    },
+    "slice.copy":{
+        "description": "Slice Copy"
+    },
+    "slice.cut":{
+        "body": "a = append(a[:i], a[j:]...)"
+    },
+    "slice.delete":{
+        "body": "a = append(a[:i], a[i+1:]...)"
+    },
+    "slice.extend":{
+        "body": "a = append(a, make([]T, j)...)"
+    },
+    "slice.insert":{
+        "body": "a = append(a[:i], append([]T{x}, a[i:]...)...)"
+    },
+    "slice.unshift":{
+        "body": "a = append([]T{x}, a...)"
+    },
+    "slice.push":{
+        "body": "a = append(a, x)"
+    },
+    "slice.pop":{
+        "body": "x, a = a[0], a[1:]"
+    },
+    "slice.popback":{
+        "body": "x, a = a[len(a) -1], a[:len(a) -1]"
+    }
+}
