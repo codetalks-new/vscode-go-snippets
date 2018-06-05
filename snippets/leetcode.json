@@ -38,6 +38,34 @@
     ],
     "scope": "go"
   },
+  "sumi": {
+    "description": "sum for ints",
+    "prefix": "sumi",
+    "body": [
+      "func sum(nums []int) int {",
+      "\ts := 0",
+      "\tfor _, num := range nums {",
+      "\t\ts += num",
+      "\t}",
+      "\treturn s",
+      "}"
+    ],
+    "scope": "go"
+  },
+  "avgi": {
+    "description": "avg for ints",
+    "prefix": "avgi",
+    "body": [
+      "func avg(nums []int) float64 {",
+      "\ts := 0",
+      "\tfor _, num := range nums {",
+      "\t\ts += num",
+      "\t}",
+      "\treturn float64(s) / float64(len(nums))",
+      "}"
+    ],
+    "scope": "go"
+  },
   "maxints": {
     "description": "max for ints",
     "prefix": "maxints",

@@ -1,50 +1,56 @@
 {
-    "absi": {
-        "description": "abs for int"
-    },
-    "maxi": {
-        "description": "max for int"
-    },
-    "mini": {
-        "description": "min for int"
-    },
-    "maxints": {
-        "description": "max for ints"
-    },
-    "joinints": {
-        "description": "join ints to string"
-    },
-    "limits": {
-        "description": "MaxInt and MinInt"
-    },
-    "treenode": {
-        "description": "type TreeNode struct"
-    },
-    "dumptree": {
-        "description": "Dump Tree using level order"
-    },
-    "listnode": {
-        "description": "type ListNode struct"
-    },
-    "dumplistnode": {
-        "description": "Dump ListNode using level order"
-    },
-    "reversearr": {
-        "description": "Reverse Ints Array"
-    },
-    "reversestr": {
-        "description": "Reverse String"
-    },
-    "pbasic": {
-        "description": "Basic file for problem"
-    },
-    "pbinarytree": {
-        "description": "Binary Tree solution file stub"
-    },
-    "p1darr": {
-        "description": "One Dimen Array Basic file stub"
-    },
-    "p2darr": {
-        "description": "One Dimen Array Basic file stub"
-    }
+  "absi": {
+    "description": "abs for int"
+  },
+  "maxi": {
+    "description": "max for int"
+  },
+  "mini": {
+    "description": "min for int"
+  },
+  "sumi": {
+    "description": "sum for ints"
+  },
+  "avgi": {
+    "description": "avg for ints"
+  },
+  "maxints": {
+    "description": "max for ints"
+  },
+  "joinints": {
+    "description": "join ints to string"
+  },
+  "limits": {
+    "description": "MaxInt and MinInt"
+  },
+  "treenode": {
+    "description": "type TreeNode struct"
+  },
+  "dumptree": {
+    "description": "Dump Tree using level order"
+  },
+  "listnode": {
+    "description": "type ListNode struct"
+  },
+  "dumplistnode": {
+    "description": "Dump ListNode using level order"
+  },
+  "reversearr": {
+    "description": "Reverse Ints Array"
+  },
+  "reversestr": {
+    "description": "Reverse String"
+  },
+  "pbasic": {
+    "description": "Basic file for problem"
+  },
+  "pbinarytree": {
+    "description": "Binary Tree solution file stub"
+  },
+  "p1darr": {
+    "description": "One Dimen Array Basic file stub"
+  },
+  "p2darr": {
+    "description": "One Dimen Array Basic file stub"
+  }
 }

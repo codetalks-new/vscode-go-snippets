@@ -8,6 +8,8 @@ Currently we only offer some snippets for leetcode . below is the snippets table
 | absi | abs for int |
 | maxi | max for int |
 | mini | min for int |
+| sumi | sum for ints |
+| avgi | avg for ints |
 | maxints | max for ints |
 | joinints | join ints to string |
 | limits | MaxInt and MinInt |
