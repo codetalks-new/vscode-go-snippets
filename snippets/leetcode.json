@@ -115,6 +115,24 @@
     ],
     "scope": "go"
   },
+  "contains-str": {
+    "description": "String slice contains str",
+    "prefix": "contains-str",
+    "body": [
+      "func findIndex(strs []string, str string) int {",
+      "\tfor index, curStr := range strs {",
+      "\t\tif curStr == str {",
+      "\t\t\treturn index",
+      "\t\t}",
+      "\t}",
+      "\treturn -1",
+      "}",
+      "func containsStr(strs []string, str string) int {",
+      "\treturn findIndex(strs, str) != -1",
+      "}"
+    ],
+    "scope": "go"
+  },
   "treenode": {
     "description": "type TreeNode struct",
     "prefix": "treenode",
@@ -287,7 +305,7 @@
       "func $1(nums []int) int {",
       "}",
       "func main() {",
-      "\tfmt.Println(\"3 -> \", $2([]int{1, 1, 0, 1, 1, 1}))",
+      "\tfmt.Println(\"3 -> \", $1([]int{1, 1, 0, 1, 1, 1}))",
       "}"
     ],
     "scope": "go"

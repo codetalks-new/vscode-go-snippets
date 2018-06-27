@@ -23,6 +23,9 @@
   "limits": {
     "description": "MaxInt and MinInt"
   },
+  "contains-str": {
+    "description": "String slice contains str"
+  },
   "treenode": {
     "description": "type TreeNode struct"
   },
